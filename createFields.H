@@ -27,12 +27,12 @@ volVectorField U
     mesh
 );
 
-Info<< "Reading field phi_n\n" << endl;
-volScalarField phi_n
+Info<< "Reading field RP\n" << endl;
+volScalarField RP
 (
     IOobject
     (
-        "phi_n",
+        "RP",
         runTime.timeName(),
         mesh,
         IOobject::MUST_READ,
@@ -41,12 +41,13 @@ volScalarField phi_n
     mesh
 );
 
-Info<< "Reading field phi_a\n" << endl;
-volScalarField phi_a
+
+Info<< "Reading field AP\n" << endl;
+volScalarField AP
 (
     IOobject
     (
-        "phi_a",
+        "AP",
         runTime.timeName(),
         mesh,
         IOobject::MUST_READ,
@@ -55,12 +56,13 @@ volScalarField phi_a
     mesh
 );
 
-Info<< "Reading field ADP\n" << endl;
-volScalarField ADP
+
+Info<< "Reading field APR\n" << endl;
+volScalarField APR
 (
     IOobject
     (
-        "ADP",
+        "APR",
         runTime.timeName(),
         mesh,
         IOobject::MUST_READ,
@@ -69,12 +71,12 @@ volScalarField ADP
     mesh
 );
 
-Info<< "Reading field epsilon\n" << endl;
-volScalarField epsilon
+Info<< "Reading field APS\n" << endl;
+volScalarField APS
 (
     IOobject
     (
-        "epsilon",
+        "APS",
         runTime.timeName(),
         mesh,
         IOobject::MUST_READ,
@@ -82,6 +84,261 @@ volScalarField epsilon
     ),
     mesh
 );
+
+Info<< "Reading field PT\n" << endl;
+volScalarField PT
+(
+    IOobject
+    (
+        "PT",
+        runTime.timeName(),
+        mesh,
+        IOobject::MUST_READ,
+        IOobject::AUTO_WRITE
+    ),
+    mesh
+);
+
+
+Info<< "Reading field TRB\n" << endl;
+volScalarField TRB
+(
+    IOobject
+    (
+        "TRB",
+        runTime.timeName(),
+        mesh,
+        IOobject::MUST_READ,
+        IOobject::AUTO_WRITE
+    ),
+    mesh
+);
+
+Info<< "Reading field ATIII\n" << endl;
+volScalarField ATIII
+(
+    IOobject
+    (
+        "ATIII",
+        runTime.timeName(),
+        mesh,
+        IOobject::MUST_READ,
+        IOobject::AUTO_WRITE
+    ),
+    mesh
+);
+
+
+Info<< "Reading field omega\n" << endl;
+volScalarField omega
+(
+    IOobject
+    (
+        "omega",
+        runTime.timeName(),
+        mesh,
+        IOobject::MUST_READ,
+        IOobject::AUTO_WRITE
+    ),
+    mesh
+);
+
+Info<< "Reading field F_switch\n" << endl;
+volScalarField F_switch
+(
+    IOobject
+    (
+        "F_switch",
+        runTime.timeName(),
+        mesh,
+        IOobject::MUST_READ,
+        IOobject::AUTO_WRITE
+    ),
+    mesh
+);
+
+Info<< "Reading field kpa\n" << endl;
+volScalarField kpa
+(
+    IOobject
+    (
+        "kpa",
+        runTime.timeName(),
+        mesh,
+        IOobject::MUST_READ,
+        IOobject::AUTO_WRITE
+    ),
+    mesh
+);
+
+Info<< "Reading field gamma\n" << endl;
+volScalarField gamma
+(
+    IOobject
+    (
+        "gamma",
+        runTime.timeName(),
+        mesh,
+        IOobject::MUST_READ,
+        IOobject::AUTO_WRITE
+    ),
+    mesh
+);
+
+Info<< "Reading field JR\n" << endl;
+volScalarField JR
+(
+    IOobject
+    (
+        "JR",
+        runTime.timeName(),
+        mesh,
+        IOobject::MUST_READ,
+        IOobject::AUTO_WRITE
+    ),
+    mesh
+);
+
+Info<< "Reading field JA\n" << endl;
+volScalarField JA
+(
+    IOobject
+    (
+        "JA",
+        runTime.timeName(),
+        mesh,
+        IOobject::MUST_READ,
+        IOobject::AUTO_WRITE
+    ),
+    mesh
+);
+
+Info<< "Reading field JPR\n" << endl;
+volScalarField JPR
+(
+    IOobject
+    (
+        "JPR",
+        runTime.timeName(),
+        mesh,
+        IOobject::MUST_READ,
+        IOobject::AUTO_WRITE
+    ),
+    mesh
+);
+
+Info<< "Reading field JPS\n" << endl;
+volScalarField JPS
+(
+    IOobject
+    (
+        "JPS",
+        runTime.timeName(),
+        mesh,
+        IOobject::MUST_READ,
+        IOobject::AUTO_WRITE
+    ),
+    mesh
+);
+
+Info<< "Reading field JPT\n" << endl;
+volScalarField JPT
+(
+    IOobject
+    (
+        "JPT",
+        runTime.timeName(),
+        mesh,
+        IOobject::MUST_READ,
+        IOobject::AUTO_WRITE
+    ),
+    mesh
+);
+
+Info<< "Reading field JT\n" << endl;
+volScalarField JT
+(
+    IOobject
+    (
+        "JT",
+        runTime.timeName(),
+        mesh,
+        IOobject::MUST_READ,
+        IOobject::AUTO_WRITE
+    ),
+    mesh
+);
+
+Info<< "Reading field Saturation Function\n" << endl;
+volScalarField saturationFunction
+(
+    IOobject
+    (
+        "saturationFunction",
+        runTime.timeName(),
+        mesh,
+        IOobject::MUST_READ,
+        IOobject::AUTO_WRITE
+    ),
+    mesh
+);
+
+Info<< "Reading field M\n" << endl;
+volScalarField M
+(
+    IOobject
+    (
+        "M",
+        runTime.timeName(),
+        mesh,
+        IOobject::MUST_READ,
+        IOobject::AUTO_WRITE
+    ),
+    mesh
+);
+
+Info<< "Reading field MAS\n" << endl;
+volScalarField MAS
+(
+    IOobject
+    (
+        "MAS",
+        runTime.timeName(),
+        mesh,
+        IOobject::MUST_READ,
+        IOobject::AUTO_WRITE
+    ),
+    mesh
+);
+
+Info<< "Reading field MR\n" << endl;
+volScalarField MR
+(
+    IOobject
+    (
+        "MR",
+        runTime.timeName(),
+        mesh,
+        IOobject::MUST_READ,
+        IOobject::AUTO_WRITE
+    ),
+    mesh
+);
+
+Info<< "Reading field MAT\n" << endl;
+volScalarField MAT
+(
+    IOobject
+    (
+        "MAT",
+        runTime.timeName(),
+        mesh,
+        IOobject::MUST_READ,
+        IOobject::AUTO_WRITE
+    ),
+    mesh
+);
+
 
 Info<< "Creating field variables for solution procedure\n" << endl;
 
@@ -217,28 +474,82 @@ dimensionedScalar nu
     transportProperties.lookup("nu")
 );
 
-dimensionedScalar D_a
+dimensionedScalar D_AP
 (
-    "D_a",
-    transportProperties.lookup("D_a")
+    "D_AP",
+    transportProperties.lookup("D_AP")
 );
 
-dimensionedScalar D_ADP
+dimensionedScalar D_RP
 (
-    "D_ADP",
-    transportProperties.lookup("D_ADP")
+    "D_RP",
+    transportProperties.lookup("D_RP")
 );
 
-dimensionedScalar D_n
+dimensionedScalar D_APR
 (
-    "D_n",
-    transportProperties.lookup("D_n")
+    "D_APR",
+    transportProperties.lookup("D_APR")
 );
 
-dimensionedScalar C
+dimensionedScalar D_APS
 (
-    "C",
-    transportProperties.lookup("C")
+    "D_APS",
+    transportProperties.lookup("D_APS")
+);
+
+dimensionedScalar D_PT
+(
+    "D_PT",
+    transportProperties.lookup("D_PT")
+);
+
+dimensionedScalar D_TRB
+(
+    "D_TRB",
+    transportProperties.lookup("D_TRB")
+);
+
+dimensionedScalar D_ATIII
+(
+    "D_ATIII",
+    transportProperties.lookup("D_ATIII")
+);
+
+dimensionedScalar H
+(
+    "H",
+    transportProperties.lookup("H")
+);
+
+dimensionedScalar KRS
+(
+    "KRS",
+    transportProperties.lookup("KRS")
+);
+
+dimensionedScalar KAS
+(
+    "KAS",
+    transportProperties.lookup("KAS")
+);
+
+dimensionedScalar KAA
+(
+    "KAA",
+    transportProperties.lookup("KAA")
+);
+
+dimensionedScalar TACT
+(
+    "TACT",
+    transportProperties.lookup("TACT")
+);
+
+dimensionedScalar theta
+(
+    "theta",
+    transportProperties.lookup("theta")
 );
 
 dimensionedScalar alpha
@@ -253,41 +564,60 @@ dimensionedScalar beta
     transportProperties.lookup("beta")
 );
 
-dimensionedScalar kCon
+dimensionedScalar K1_T
 (
-    "kCon",
-    transportProperties.lookup("kCon")
+    "K1_T",
+    transportProperties.lookup("K1_T")
 );
 
-dimensionedScalar A
+dimensionedScalar KAT
 (
-    "A",
-    transportProperties.lookup("A")
+    "KAT",
+    transportProperties.lookup("KAT")
 );
 
-dimensionedScalar alpha_eps
+dimensionedScalar KT
 (
-    "alpha_eps",
-    transportProperties.lookup("alpha_eps")
+    "KT",
+    transportProperties.lookup("KT")
 );
 
-dimensionedScalar B
+dimensionedScalar 
 (
-    "B",
-    transportProperties.lookup("B")
+    "beta",
+    transportProperties.lookup("beta")
 );
 
-dimensionedScalar ADP_t
+dimensionedScalar phi_at
 (
-    "ADP_t",
-    transportProperties.lookup("ADP_t")
+    "phi_at",
+    transportProperties.lookup("phi_at")
 );
 
-dimensionedScalar t_ADP
+dimensionedScalar phi_rt
 (
-    "t_ADP",
-    transportProperties.lookup("t_ADP")
+    "phi_rt",
+    transportProperties.lookup("phi_rt")
 );
+
+dimensionedScalar k1_j
+(
+    "k1_j",
+    transportProperties.lookup("k1_j")
+);
+
+dimensionedScalar lambda_j
+(
+    "lambda_j",
+    transportProperties.lookup("lambda_j")
+);
+
+dimensionedScalar spj
+(
+    "spj",
+    transportProperties.lookup("spj")
+);
+
 
 dimensionedScalar tau_low_wall
 (
@@ -337,22 +667,11 @@ dimensionedScalar eps_t
      transportProperties.lookup("eps_t")
 );
 
-dimensionedScalar phi_ai
-(
-     "phi_ai",
-     transportProperties.lookup("phi_ai")
-);
 
-dimensionedScalar phi_ni
+dimensionedScalar shearThreshold
 (
-     "phi_ni",
-     transportProperties.lookup("phi_ni")
-);
-
-dimensionedScalar R_ADP
-(
-     "R_ADP",
-     transportProperties.lookup("R_ADP")
+     "shearThreshold",
+     transportProperties.lookup("shearThreshold")
 );
 
 
