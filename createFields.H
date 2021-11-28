@@ -137,10 +137,11 @@ volScalarField omega
         "omega",
         runTime.timeName(),
         mesh,
-        IOobject::MUST_READ,
-        IOobject::AUTO_WRITE
+        IOobject::NO_READ,
+        IOobject::NO_WRITE
     ),
-    mesh
+    mesh,
+    dimensionedScalar("omega", dimensionSet(0,0,0,0,0,0,0), 0.0)
 );
 
 Info<< "Reading field F_switch\n" << endl;
@@ -151,10 +152,11 @@ volScalarField F_switch
         "F_switch",
         runTime.timeName(),
         mesh,
-        IOobject::MUST_READ,
-        IOobject::AUTO_WRITE
+        IOobject::NO_READ,
+        IOobject::NO_WRITE
     ),
-    mesh
+    mesh,
+    dimensionedScalar("F_switch", dimensionSet(0,0,0,0,0,0,0), 0.0)
 );
 
 Info<< "Reading field kpa\n" << endl;
@@ -165,10 +167,11 @@ volScalarField kpa
         "kpa",
         runTime.timeName(),
         mesh,
-        IOobject::MUST_READ,
-        IOobject::AUTO_WRITE
+        IOobject::NO_READ,
+        IOobject::NO_WRITE
     ),
-    mesh
+    mesh,
+    dimensionedScalar("kpa", dimensionSet(0,0,-1,0,0,0,0), 0.0)
 );
 
 Info<< "Reading field gamma\n" << endl;
@@ -179,10 +182,11 @@ volScalarField gamma
         "gamma",
         runTime.timeName(),
         mesh,
-        IOobject::MUST_READ,
-        IOobject::AUTO_WRITE
+        IOobject::NO_READ,
+        IOobject::NO_WRITE
     ),
-    mesh
+    mesh,
+    dimensionedScalar("gamma", dimensionSet(0,0,-1,0,0,0,0), 0.0)
 );
 
 Info<< "Reading field JR\n" << endl;
@@ -193,10 +197,11 @@ volScalarField JR
         "JR",
         runTime.timeName(),
         mesh,
-        IOobject::MUST_READ,
-        IOobject::AUTO_WRITE
+        IOobject::NO_READ,
+        IOobject::NO_WRITE
     ),
-    mesh
+    mesh,
+    dimensionedScalar("JR", dimensionSet(0,-2,-1,0,0,0,0), 0.0)
 );
 
 Info<< "Reading field JA\n" << endl;
@@ -207,10 +212,11 @@ volScalarField JA
         "JA",
         runTime.timeName(),
         mesh,
-        IOobject::MUST_READ,
-        IOobject::AUTO_WRITE
+        IOobject::NO_READ,
+        IOobject::NO_WRITE
     ),
-    mesh
+    mesh,
+    dimensionedScalar("JA", dimensionSet(0,-2,-1,0,0,0,0), 0.0)
 );
 
 Info<< "Reading field JPR\n" << endl;
@@ -221,10 +227,11 @@ volScalarField JPR
         "JPR",
         runTime.timeName(),
         mesh,
-        IOobject::MUST_READ,
-        IOobject::AUTO_WRITE
+        IOobject::NO_READ,
+        IOobject::NO_WRITE
     ),
-    mesh
+    mesh,
+    dimensionedScalar("JPR", dimensionSet(0,-2,-1,0,1,0,0), 0.0)
 );
 
 Info<< "Reading field JPS\n" << endl;
@@ -235,10 +242,11 @@ volScalarField JPS
         "JPS",
         runTime.timeName(),
         mesh,
-        IOobject::MUST_READ,
-        IOobject::AUTO_WRITE
+        IOobject::NO_READ,
+        IOobject::NO_WRITE
     ),
-    mesh
+    mesh,
+    dimensionedScalar("JPS", dimensionSet(0,-2,-1,0,1,0,0), 0.0)
 );
 
 Info<< "Reading field JPT\n" << endl;
@@ -249,10 +257,11 @@ volScalarField JPT
         "JPT",
         runTime.timeName(),
         mesh,
-        IOobject::MUST_READ,
-        IOobject::AUTO_WRITE
+        IOobject::NO_READ,
+        IOobject::NO_WRITE
     ),
-    mesh
+    mesh,
+    dimensionedScalar("JPT", dimensionSet(0,-2,-1,0,1,0,0), 0.0)
 );
 
 Info<< "Reading field JT\n" << endl;
@@ -263,10 +272,11 @@ volScalarField JT
         "JT",
         runTime.timeName(),
         mesh,
-        IOobject::MUST_READ,
-        IOobject::AUTO_WRITE
+        IOobject::NO_READ,
+        IOobject::NO_WRITE
     ),
-    mesh
+    mesh,
+    dimensionedScalar("JT", dimensionSet(0,-2,-1,0,0,0,0), 0.0)
 );
 
 Info<< "Reading field Saturation Function\n" << endl;
@@ -277,10 +287,11 @@ volScalarField saturationFunction
         "saturationFunction",
         runTime.timeName(),
         mesh,
-        IOobject::MUST_READ,
-        IOobject::AUTO_WRITE
+        IOobject::NO_READ,
+        IOobject::NO_WRITE
     ),
-    mesh
+    mesh,
+    dimensionedScalar("saturationFunction", dimensionSet(0,0,0,0,0,0,0), 0.0)
 );
 
 Info<< "Reading field M\n" << endl;
@@ -291,10 +302,11 @@ volScalarField M
         "M",
         runTime.timeName(),
         mesh,
-        IOobject::MUST_READ,
-        IOobject::AUTO_WRITE
+        IOobject::NO_READ,
+        IOobject::NO_WRITE
     ),
-    mesh
+    mesh,
+    dimensionedScalar("M", dimensionSet(0,-2,0,0,0,0,0), 0.0)
 );
 
 Info<< "Reading field MAS\n" << endl;
@@ -305,10 +317,11 @@ volScalarField MAS
         "MAS",
         runTime.timeName(),
         mesh,
-        IOobject::MUST_READ,
-        IOobject::AUTO_WRITE
+        IOobject::NO_READ,
+        IOobject::NO_WRITE
     ),
-    mesh
+    mesh,
+    dimensionedScalar("MAS", dimensionSet(0,-2,0,0,0,0,0), 0.0)
 );
 
 Info<< "Reading field MR\n" << endl;
@@ -319,10 +332,11 @@ volScalarField MR
         "MR",
         runTime.timeName(),
         mesh,
-        IOobject::MUST_READ,
-        IOobject::AUTO_WRITE
+        IOobject::NO_READ,
+        IOobject::NO_WRITE
     ),
-    mesh
+    mesh,
+    dimensionedScalar("MR", dimensionSet(0,-2,0,0,0,0,0), 0.0)
 );
 
 Info<< "Reading field MAT\n" << endl;
@@ -333,56 +347,57 @@ volScalarField MAT
         "MAT",
         runTime.timeName(),
         mesh,
-        IOobject::MUST_READ,
-        IOobject::AUTO_WRITE
-    ),
-    mesh
-);
-
-
-Info<< "Creating field variables for solution procedure\n" << endl;
-
-volScalarField A_C
-(
-    IOobject
-    (
-        "A_C",
-        runTime.timeName(),
-        mesh,
         IOobject::NO_READ,
         IOobject::NO_WRITE
     ),
     mesh,
-    dimensionedScalar("A_C", dimensionSet(0,0,-1,0,0,0,0), 0.0)
+    dimensionedScalar("MAT", dimensionSet(0,-2,0,0,0,0,0), 0.0)
 );
+
+
+// Info<< "Creating field variables for solution procedure\n" << endl;
+
+// volScalarField A_C
+// (
+//     IOobject
+//     (
+//         "A_C",
+//         runTime.timeName(),
+//         mesh,
+//         IOobject::NO_READ,
+//         IOobject::NO_WRITE
+//     ),
+//     mesh,
+//     dimensionedScalar("A_C", dimensionSet(0,0,-1,0,0,0,0), 0.0)
+// );
     
-volScalarField A_M
-(
-    IOobject
-    (
-        "A_M",
-        runTime.timeName(),
-        mesh,
-        IOobject::NO_READ,
-        IOobject::NO_WRITE
-    ),
-    mesh,
-    dimensionedScalar("A_M", dimensionSet(0,0,-1,0,0,0,0), 0.0)
-);
+// volScalarField A_M
+// (
+//     IOobject
+//     (
+//         "A_M",
+//         runTime.timeName(),
+//         mesh,
+//         IOobject::NO_READ,
+//         IOobject::NO_WRITE
+//     ),
+//     mesh,
+//     dimensionedScalar("A_M", dimensionSet(0,0,-1,0,0,0,0), 0.0)
+// );
     
-volScalarField phi_f
-(
-    IOobject
-    (
-        "phi_f",
-        runTime.timeName(),
-        mesh,
-        IOobject::NO_READ,
-        IOobject::NO_WRITE
-    ),
-    mesh,
-    dimensionedScalar("phi_f", dimensionSet(0,0,0,0,0,0,0), 0.0)
-);    
+// volScalarField phi_f
+// (
+//     IOobject
+//     (
+//         "phi_f",
+//         runTime.timeName(),
+//         mesh,
+//         IOobject::NO_READ,
+//         IOobject::NO_WRITE
+//     ),
+//     mesh,
+//     dimensionedScalar("phi_f", dimensionSet(0,0,0,0,0,0,0), 0.0)
+// );    
     
 volScalarField tau
 (
@@ -392,53 +407,53 @@ volScalarField tau
         runTime.timeName(),
         mesh,
         IOobject::NO_READ,
-        IOobject::AUTO_WRITE
+        IOobject::NO_WRITE
     ),
     mesh,
     dimensionedScalar("tau", dimensionSet(1,-1,-2,0,0,0,0), 0.0)
 );
     
-volScalarField P_TSP
-(
-    IOobject
-    (
-        "P_TSP",
-	runTime.timeName(),
-	mesh,
-	IOobject::NO_READ,
-        IOobject::AUTO_WRITE
-    ),
-    mesh,
-    dimensionedScalar("P_TSP", dimensionSet(0,0,0,0,0,0,0), 0.0)
-);
+// volScalarField P_TSP
+// (
+//     IOobject
+//     (
+//         "P_TSP",
+// 	runTime.timeName(),
+// 	mesh,
+// 	IOobject::NO_READ,
+//         IOobject::NO_WRITE
+//     ),
+//     mesh,
+//     dimensionedScalar("P_TSP", dimensionSet(0,0,0,0,0,0,0), 0.0)
+// );
 
-volScalarField beta_eps
-(
-    IOobject
-    (
-        "beta_eps",
-	runTime.timeName(),
-	mesh,
-	IOobject::NO_READ,
-	IOobject::NO_WRITE
-    ),
-    mesh,
-    dimensionedScalar("beta_eps", dimensionSet(0,0,-1,0,0,0,0), 0.0)
-);
+// volScalarField beta_eps
+// (
+//     IOobject
+//     (
+//         "beta_eps",
+// 	runTime.timeName(),
+// 	mesh,
+// 	IOobject::NO_READ,
+// 	IOobject::NO_WRITE
+//     ),
+//     mesh,
+//     dimensionedScalar("beta_eps", dimensionSet(0,0,-1,0,0,0,0), 0.0)
+// );
 
-volScalarField WSS
-(
-    IOobject
-    (
-        "WSS",
-	runTime.timeName(),
-	mesh,
-	IOobject::NO_READ,
-	IOobject::AUTO_WRITE
-    ),
-    mesh,
-    dimensionedScalar("WSS", dimensionSet(1,-1,-2,0,0,0,0), 0.0)
-);
+// volScalarField WSS
+// (
+//     IOobject
+//     (
+//         "WSS",
+// 	runTime.timeName(),
+// 	mesh,
+// 	IOobject::NO_READ,
+// 	IOobject::NO_WRITE
+//     ),
+//     mesh,
+//     dimensionedScalar("WSS", dimensionSet(1,-1,-2,0,0,0,0), 0.0)
+// );
 
 volScalarField check
 (
@@ -600,10 +615,10 @@ dimensionedScalar phi_rt
     transportProperties.lookup("phi_rt")
 );
 
-dimensionedScalar k1_j
+dimensionedScalar K1_j
 (
-    "k1_j",
-    transportProperties.lookup("k1_j")
+    "K1_j",
+    transportProperties.lookup("K1_j")
 );
 
 dimensionedScalar lambda_j
@@ -661,11 +676,11 @@ dimensionedScalar rho
     transportProperties.lookup("rho")
 );
 
-dimensionedScalar eps_t
-(
-     "eps_t",
-     transportProperties.lookup("eps_t")
-);
+// dimensionedScalar eps_t
+// (
+//      "eps_t",
+//      transportProperties.lookup("eps_t")
+// );
 
 
 dimensionedScalar shearThreshold
