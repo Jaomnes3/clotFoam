@@ -95,13 +95,13 @@ solvers
         relTol           0;
     }
     
-    epsilon
-    {
-        solver           PBiCG;
-        preconditioner   DILU;
-        tolerance        1e-06;
-        relTol           0;
-    }
+//    epsilon
+//    {
+//        solver           PBiCG;
+//        preconditioner   DILU;
+//        tolerance        1e-06;
+//        relTol           0;
+//    }
 }
 
 PISO

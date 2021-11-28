@@ -36,7 +36,7 @@ brinkmanSource
         
         Pout<< "**codeAddSup**" << endl;
         
-        const scalarField& epsTemp = mesh_.lookupObject<volScalarField>("epsilon");
+//        const scalarField& epsTemp = mesh_.lookupObject<volScalarField>("epsilon");
         const vectorField& U = mesh_.lookupObject<volVectorField>("U");
         const scalarField& V = mesh_.V();
             
